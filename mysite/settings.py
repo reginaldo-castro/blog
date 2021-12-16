@@ -25,7 +25,7 @@ SECRET_KEY = '-v@mea=%^5tennms6rk+7dpbp6rm(8_ye&nl@3z0urhv^t-4xm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -119,3 +119,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+EMAIL_HOST = 'email-ssl.com.br'
+EMAIL_HOST_USER = 'reginaldo.costa@gruporedeamazonica.com.br'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = '587'
+EMAIL_USE_TLS = 'TLS'
